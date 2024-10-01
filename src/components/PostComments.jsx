@@ -1,9 +1,9 @@
 import Comment from './Comment'
 
 export default function PostComments(props) {
-  const commentElements = props.data.map((comment) => (
+  const commentElements = props.data.map((comment,index) => (
     <Comment
-      key={comment.id}
+      key={index}
       userName={comment.userName}
       isAnonymous={comment.isAnonymous}
       commentText={comment.commentText}
